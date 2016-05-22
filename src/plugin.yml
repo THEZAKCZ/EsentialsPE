@@ -1,0 +1,12 @@
+name: Spawn
+version: "1.0"
+author: THEZAK
+api: ["1.0.0"]
+main: cz.THEZAK.spawn.Main
+commands:
+  spawn:
+    description: Teleport you to spawn
+    permission: spawn.use
+  setspawn:
+    description: Set spawn location
+    permission: setspawn.use    
