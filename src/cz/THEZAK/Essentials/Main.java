@@ -3,6 +3,7 @@ package cz.THEZAK.Essentials;
 import cn.nukkit.event.Listener;
 import cn.nukkit.plugin.PluginBase;
 import cn.nukkit.utils.Config;
+import cz.THEZAK.Essentials.commands.Commands;
 
 import java.io.File;
 import java.util.LinkedHashMap;
@@ -19,6 +20,7 @@ public void onEnable()
       getDataFolder(), "config.yml"), 2, new LinkedHashMap()
     {
     });
+    new Commands();
     config.save();
 
     getServer().getLogger().info("SimpleSpawn loaded!");
