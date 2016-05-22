@@ -4,7 +4,6 @@ import cn.nukkit.event.Listener;
 import cn.nukkit.plugin.PluginBase;
 import cn.nukkit.utils.Config;
 import cz.THEZAK.Essentials.commands.Commands;
-
 import java.io.File;
 import java.util.LinkedHashMap;
 
@@ -23,6 +22,11 @@ public void onEnable()
     new Commands();
     config.save();
 
-    getServer().getLogger().info("SimpleSpawn loaded!");
+    getServer().getLogger().info("EssentialsPE loaded!");
+  }
+    
+    public void onDisable()
+    {
+      getServer().getLogger().info("EssentialsPE disabled!");
   }
 }
