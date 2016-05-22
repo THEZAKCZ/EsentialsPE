@@ -2,11 +2,14 @@ name: Spawn
 version: "1.0"
 author: THEZAK
 api: ["1.0.0"]
-main: cz.THEZAK.spawn.Main
+main: cz.THEZAK.Essentials.Main
 commands:
   spawn:
     description: Teleport you to spawn
-    permission: spawn.use
+    permission: essentials.spawn
   setspawn:
     description: Set spawn location
-    permission: setspawn.use    
+    permission: essentials.setspawn
+  setwarp:
+    description: Set warp
+    permission: essentials.setwarp 
