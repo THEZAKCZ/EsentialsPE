@@ -1,15 +1,42 @@
-name: Spawn
+name: EssentialsPE
 version: "1.0"
 author: THEZAK
 api: ["1.0.0"]
 main: cz.THEZAK.Essentials.Main
-commands:
-  spawn:
-    description: Teleport you to spawn
-    permission: essentials.spawn
-  setspawn:
-    description: Set spawn location
-    permission: essentials.setspawn
-  setwarp:
-    description: Set warp
-    permission: essentials.setwarp 
+permissions:
+  essentials:
+    children:
+      essentials.all:
+        children:
+          essentials.spawn:
+            default: true
+          essentials.suicide:
+            default: true            
+  essentials:
+    op:
+      essentials.all:
+        op:
+          essentials.setwarp:
+            default: false
+          essentials.warp:
+            default: false        
+          essentials.day:
+            default: false
+          essentials.night:
+            default: false
+          essentials.sun:
+            default: false
+          essentials.rain:
+            default: false   
+          essentials.delwarp:
+            default: false
+          essentials.delwarp:
+            default: false
+          essentials.sethome:
+            default: true
+          essentials.home:
+            default: false
+          essentials.delhome:
+            default: false
+          essentials.broadcast:
+            default: false            
